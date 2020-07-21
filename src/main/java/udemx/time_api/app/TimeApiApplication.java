@@ -16,15 +16,4 @@ public class TimeApiApplication {
 		SpringApplication.run(TimeApiApplication.class, args);
 	}
 
-	/*@Bean
-	public Executor taskExecutor() {
-		ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
-		executor.setCorePoolSize(1);
-		executor.setMaxPoolSize(1);
-		executor.setQueueCapacity(500);
-		executor.setThreadNamePrefix("Timedisplay-");
-		executor.initialize();
-		return executor;
-	}*/
-
 }
