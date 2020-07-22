@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 import java.util.concurrent.CompletableFuture;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/")
 public class TimeController {
 
     @Autowired
@@ -19,12 +19,12 @@ public class TimeController {
 
     LocalDateTime localDate = LocalDateTime.now();
 
-    @GetMapping("/timefromweb")
+    @GetMapping("/ONE")
     public CompletableFuture<WorldTimeApi> getTimeFromWeb() throws InterruptedException {
         return ts.displayTime();
     }
 
-    @GetMapping("timefrompc")
+    @GetMapping("TWO")
     public LocalDateTime getTimeFromPc() {
         return localDate;
     }
